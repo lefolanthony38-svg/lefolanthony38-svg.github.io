@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anthony Lefol — Développeur Web & Web Mobile</title>
+  <meta name="description" content="Portfolio d'Anthony Lefol, développeur web et web mobile en formation dans la Drôme (26). Création de sites vitrines pour associations, TPE et indépendants.">
+  <meta name="author" content="Anthony Lefol">
+  <meta name="theme-color" content="#0d1117">
+
+  <!-- Aperçu lors d'un partage (LinkedIn, Messenger...) -->
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Anthony Lefol — Développeur Web & Web Mobile">
+  <meta property="og:description" content="Sites vitrines clairs, rapides et accessibles pour associations, TPE et indépendants. Drôme (26).">
+  <!-- À décommenter une fois le domaine connu :
+  <meta property="og:url" content="https://votre-domaine.fr/">
+  <link rel="canonical" href="https://votre-domaine.fr/">
+  -->
+
+  <link rel="icon" href="favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== EN-TÊTE / NAVIGATION ========== -->
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Navigation principale">
+      <a href="#accueil" class="logo">&lt;AL /&gt;</a>
+
+      <button class="burger" id="burger" aria-label="Ouvrir le menu" aria-expanded="false" aria-controls="menu">
+        <span></span><span></span><span></span>
+      </button>
+
+      <ul class="menu" id="menu">
+        <li><a href="#a-propos">À propos</a></li>
+        <li><a href="#competences">Compétences</a></li>
+        <li><a href="#projets">Projets</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#parcours">Parcours</a></li>
+        <li><a href="#contact" class="btn btn-small">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- ========== HERO ========== -->
+    <section class="hero container" id="accueil">
+      <div class="hero-text">
+        <p class="hero-tag mono">// Développeur Web &amp; Web Mobile — Drôme (26)</p>
+        <h1>Bonjour, je suis <span class="accent">Anthony Lefol</span>.</h1>
+        <p class="hero-sub">
+          Je conçois des sites web <strong>clairs, rapides et accessibles</strong> pour les associations,
+          les indépendants et les petites entreprises. Ancien technicien informatique,
+          je mets la rigueur du support au service du développement.
+        </p>
+        <div class="hero-cta">
+          <a href="#projets" class="btn">Voir mes projets</a>
+          <a href="#contact" class="btn btn-ghost">Me contacter</a>
+        </div>
+        <p class="hero-status"><span class="dot"></span> En recherche de stage — présentiel, hybride ou distanciel</p>
+      </div>
+
+      <!-- Petit terminal animé (rempli par script.js) -->
+      <div class="terminal" aria-hidden="true">
+        <div class="terminal-bar">
+          <span></span><span></span><span></span>
+          <p class="mono">anthony@portfolio:~</p>
+        </div>
+        <pre class="terminal-body mono" id="terminal"></pre>
+      </div>
+    </section>
+
+    <!-- ========== À PROPOS ========== -->
+    <section class="section container reveal" id="a-propos">
+      <h2 class="section-title"><span class="mono accent">01.</span> À propos</h2>
+      <div class="about-grid">
+        <div class="about-text">
+          <p>
+            J'ai commencé comme <strong>agent de sécurité incendie (SSIAP 1)</strong>, puis ma passion pour
+            l'informatique m'a conduit à devenir <strong>technicien support &amp; maintenance informatique</strong>.
+            Cette même passion me pousse aujourd'hui plus loin : depuis mai 2026, je prépare le
+            <strong>Titre Professionnel Développeur Web et Web Mobile</strong> pour créer à mon tour les outils que j'ai longtemps dépannés.
+          </p>
+          <p>
+            Mon parcours me donne un vrai atout : je sais <strong>écouter un utilisateur</strong>, diagnostiquer
+            un problème avec méthode et rester fiable quand il y a une échéance. Je réalise déjà des sites
+            pour de vrais clients associatifs, en totale autonomie.
+          </p>
+          <p>
+            J'aime comprendre comment les choses fonctionnent — au point de vouloir recoder les applis de mon
+            téléphone quand elles ne me conviennent pas.
+          </p>
+        </div>
+        <ul class="about-facts">
+          <li><span class="fact-num">2</span><span>sites clients associatifs</span></li>
+          <li><span class="fact-num">6+</span><span>projets réalisés ou en cours</span></li>
+          <li><span class="fact-num">3</span><span>métiers : support IT, sécurité, dev</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ========== COMPÉTENCES ========== -->
+    <section class="section container reveal" id="competences">
+      <h2 class="section-title"><span class="mono accent">02.</span> Compétences</h2>
+      <div class="skills-grid">
+        <article class="skill-card">
+          <h3>Front-end</h3>
+          <ul class="tags">
+            <li class="tag tag-strong">HTML5</li>
+            <li class="tag tag-strong">CSS3</li>
+            <li class="tag tag-strong">Responsive / Flexbox / Grid</li>
+            <li class="tag">JavaScript (DOM)</li>
+            <li class="tag">Consommation d'API (fetch)</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Back-end <span class="badge">en apprentissage</span></h3>
+          <ul class="tags">
+            <li class="tag">Node.js</li>
+            <li class="tag">Express</li>
+            <li class="tag">MySQL</li>
+            <li class="tag">MongoDB</li>
+            <li class="tag">API REST</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Design &amp; méthode</h3>
+          <ul class="tags">
+            <li class="tag">Figma (maquettes, prototypes)</li>
+            <li class="tag">Accessibilité (RGAA)</li>
+            <li class="tag">Git / GitHub</li>
+          </ul>
+        </article>
+        <article class="skill-card">
+          <h3>Savoir-être</h3>
+          <ul class="tags">
+            <li class="tag">Relation client</li>
+            <li class="tag">Diagnostic &amp; résolution</li>
+            <li class="tag">Autonomie</li>
+            <li class="tag">Sang-froid</li>
+          </ul>
+        </article>
+      </div>
+      <p class="legend"><span class="tag tag-strong">maîtrisé</span> <span class="tag">en progression</span></p>
+    </section>
+
+    <!-- ========== PROJETS ========== -->
+    <section class="section container reveal" id="projets">
+      <h2 class="section-title"><span class="mono accent">03.</span> Projets</h2>
+
+      <!-- Filtres (gérés par script.js via l'attribut data-filter) -->
+      <div class="filters" role="group" aria-label="Filtrer les projets">
+        <button class="filter active" data-filter="tous">Tous</button>
+        <button class="filter" data-filter="client">Clients</button>
+        <button class="filter" data-filter="formation">Formation</button>
+        <button class="filter" data-filter="perso">Perso</button>
+      </div>
+
+      <div class="projects-grid">
+        <!-- Chaque projet : data-category = client / formation / perso -->
+        <article class="project" data-category="client">
+          <div class="project-head">
+            <span class="project-type">Client</span>
+            <span class="project-state done">En ligne bientôt</span>
+          </div>
+          <h3>Site d'un club de kendo</h3>
+          <p>Site vitrine multi-pages pour une association sportive : présentation de la discipline, du club, actualités, galerie photo classée par saison et page contact.</p>
+          <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">Responsive</li></ul>
+          <div class="project-links"><a href="#" class="link">Voir le site →</a></div>
+        </article>
+
+        <article class="project" data-category="client">
+          <div class="project-head">
+            <span class="project-type">Client</span>
+            <span class="project-state wip">En cours</span>
+          </div>
+          <h3>Association de voitures de collection</h3>
+          <p>Site d'une association de passionnés de PT Cruiser, pour gagner en visibilité en dehors des réseaux sociaux. Plus de 5 pages prévues pour la V1 : présentation, événements, galerie, documents, contact.</p>
+          <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li></ul>
+          <div class="project-links"><span class="link muted">Bientôt disponible</span></div>
+        </article>
+
+        <article class="project" data-category="perso">
+          <div class="project-head">
+            <span class="project-type">Perso</span>
+            <span class="project-state wip">En cours</span>
+          </div>
+          <h3>ALTinformatique</h3>
+          <p>Application full-stack pour ma future entreprise IT : une <strong>API REST back-end</strong> (Node.js / Express / MySQL) consommée par un <strong>front-end</strong> en JavaScript. Prestations web, boutique de produits numériques, configurateur de PC sur mesure (configs prédéfinies + devis), comptes clients et paiement en ligne.</p>
+          <ul class="tags"><li class="tag">Node.js</li><li class="tag">Express</li><li class="tag">MySQL</li><li class="tag">API REST</li><li class="tag">JS (fetch)</li></ul>
+          <div class="project-links"><a href="#" class="link">Code GitHub →</a></div>
+        </article>
+
+        <article class="project" data-category="formation">
+          <div class="project-head">
+            <span class="project-type">Formation</span>
+            <span class="project-state done">Terminé</span>
+          </div>
+          <h3>API — Port de plaisance Russell</h3>
+          <p>API REST pour la gestion d'un port de plaisance : catways et réservations (CRUD complet), gestion des utilisateurs, authentification sécurisée, tableau de bord et documentation de l'API.</p>
+          <ul class="tags"><li class="tag">Node.js</li><li class="tag">Express</li><li class="tag">MongoDB</li><li class="tag">JWT</li><li class="tag">API REST</li></ul>
+          <div class="project-links"><a href="#" class="link">Code GitHub →</a><a href="#" class="link">Documentation →</a></div>
+        </article>
+
+        <article class="project" data-category="formation">
+          <div class="project-head">
+            <span class="project-type">Formation</span>
+            <span class="project-state done">Terminé</span>
+          </div>
+          <h3>Le Carnet Gourmand</h3>
+          <p>Blog de cuisine fictif avec un formulaire de commentaires interactif développé en JavaScript pur : validation des champs, ajout dynamique dans le DOM, sans framework.</p>
+          <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript / DOM</li></ul>
+          <div class="project-links"><a href="#" class="link">Code GitHub →</a><a href="#" class="link">Démo →</a></div>
+        </article>
+
+        <article class="project" data-category="formation">
+          <div class="project-head">
+            <span class="project-type">Formation</span>
+            <span class="project-state done">Terminé</span>
+          </div>
+          <h3>Maquettes Figma</h3>
+          <p>Plusieurs maquettes réalisées sur Figma, dont <strong>Probeats</strong>, une boutique e-commerce de matériel audio : versions desktop et mobile, charte graphique, composants, wireframes et prototype de navigation, dans le respect de l'accessibilité (RGAA).</p>
+          <ul class="tags"><li class="tag">Figma</li><li class="tag">UI / UX</li><li class="tag">RGAA</li></ul>
+          <div class="project-links"><a href="#" class="link">Voir la maquette →</a></div>
+        </article>
+
+        <article class="project" data-category="perso">
+          <div class="project-head">
+            <span class="project-type">Perso</span>
+            <span class="project-state wip">En cours</span>
+          </div>
+          <h3>Lecteur de musique mobile</h3>
+          <p>Remplacer le lecteur natif de mon smartphone, peu ergonomique et rempli de pubs : une appli simple et sans publicité, prototypée en web puis empaquetée en APK Android.</p>
+          <ul class="tags"><li class="tag">HTML</li><li class="tag">CSS</li><li class="tag">JavaScript</li><li class="tag">Android</li></ul>
+          <div class="project-links"><a href="#" class="link">Code GitHub →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== SERVICES (pour les futurs clients) ========== -->
+    <section class="section container reveal" id="services">
+      <h2 class="section-title"><span class="mono accent">04.</span> Ce que je peux faire pour vous</h2>
+      <div class="services-grid">
+        <article class="service">
+          <div class="service-icon mono">01</div>
+          <h3>Site vitrine</h3>
+          <p>Un site professionnel pour présenter votre association, votre activité ou vos événements — et exister en dehors des réseaux sociaux.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon mono">02</div>
+          <h3>Refonte &amp; responsive</h3>
+          <p>Votre site actuel est daté ou illisible sur téléphone ? Je le modernise et l'adapte à tous les écrans.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon mono">03</div>
+          <h3>Maquette avant développement</h3>
+          <p>On valide ensemble le design sur Figma avant d'écrire une seule ligne de code : pas de mauvaise surprise.</p>
+        </article>
+        <article class="service">
+          <div class="service-icon mono">04</div>
+          <h3>Accompagnement</h3>
+          <p>Mise en ligne, nom de domaine, prise en main : fort de mon expérience en support, je vous explique tout simplement.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- ========== PARCOURS ========== -->
+    <section class="section container reveal" id="parcours">
+      <h2 class="section-title"><span class="mono accent">05.</span> Parcours</h2>
+      <ol class="timeline">
+        <li class="timeline-item">
+          <span class="timeline-date mono">2026 — aujourd'hui</span>
+          <h3>Développeur Web &amp; Web Mobile <span class="muted">(formation)</span></h3>
+          <p class="timeline-org">Centre Européen de Formation — Titre Professionnel (niveau 5)</p>
+          <p>Front-end, back-end, maquettage, accessibilité. Réalisation de sites pour des clients associatifs en parallèle.</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date mono">Expérience</span>
+          <h3>Technicien support &amp; maintenance informatique</h3>
+          <p>Assistance aux utilisateurs, diagnostic et dépannage matériel/logiciel, installation de postes. Pédagogie et sens du service.</p>
+        </li>
+        <li class="timeline-item">
+          <span class="timeline-date mono">Expérience</span>
+          <h3>Agent de sécurité incendie — SSIAP 1</h3>
+          <p>Prévention, rondes, gestion des alarmes et des situations d'urgence. Rigueur, vigilance et respect des procédures.</p>
+        </li>
+      </ol>
+      <a href="#" class="btn btn-ghost">Télécharger mon CV (PDF)</a>
+    </section>
+
+    <!-- ========== CONTACT ========== -->
+    <section class="section container reveal" id="contact">
+      <h2 class="section-title"><span class="mono accent">06.</span> Contact</h2>
+      <div class="contact-grid">
+        <div class="contact-info">
+          <p class="contact-lead">Un stage à proposer, un projet de site, ou simplement une question ? Écrivez-moi, je réponds rapidement.</p>
+          <ul class="contact-list">
+            <li><span class="mono accent">email</span> <a href="mailto:lefol.anthony.38@gmail.com">lefol.anthony.38@gmail.com</a></li>
+            <li><span class="mono accent">lieu</span> Drôme (26) — déplacements et distanciel possibles</li>
+            <li><span class="mono accent">github</span> <a href="#">github.com/votre-pseudo</a></li>
+            <li><span class="mono accent">linkedin</span> <a href="#">linkedin.com/in/votre-profil</a></li>
+          </ul>
+        </div>
+
+        <!-- Formulaire : validé en JS, puis ouvre la messagerie (mailto) -->
+        <form class="contact-form" id="contact-form" novalidate>
+          <div class="field">
+            <label for="nom">Nom</label>
+            <input type="text" id="nom" name="nom" autocomplete="name" required>
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <div class="field">
+            <label for="sujet">Sujet</label>
+            <select id="sujet" name="sujet">
+              <option>Proposition de stage</option>
+              <option>Projet de site web</option>
+              <option>Autre demande</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required></textarea>
+            <p class="error" aria-live="polite"></p>
+          </div>
+          <button type="submit" class="btn">Envoyer le message</button>
+          <p class="form-success" id="form-success" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <p>© <span id="year"></span> Anthony Lefol — Développeur Web &amp; Web Mobile</p>
+      <p class="mono muted">Codé à la main en HTML, CSS &amp; JavaScript</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

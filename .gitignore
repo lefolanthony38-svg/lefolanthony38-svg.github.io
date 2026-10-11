@@ -1,0 +1,17 @@
+# Système
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Éditeurs
+.vscode/
+.idea/
+*.swp
+
+# Fichiers locaux / secrets (ne jamais les envoyer sur GitHub)
+.env
+*.local
+
+# Brouillons
+*.bak
+*.tmp

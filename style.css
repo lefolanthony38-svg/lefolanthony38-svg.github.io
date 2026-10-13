@@ -293,3 +293,15 @@ img { max-width: 100%; display: block; }
 
 /* Ligne d'avancement dans les cartes projet */
 .project .project-progress { flex: 0; font-size: 0.88rem; padding: 0.6rem 0.8rem; border-left: 2px solid var(--accent); background: var(--accent-soft); border-radius: 0 6px 6px 0; }
+
+/* ---------- Labo & à-côtés ---------- */
+.section-intro { color: var(--text-muted); max-width: 640px; margin: -1.2rem 0 2rem; }
+.labo-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); gap: 1.2rem; margin-bottom: 1.5rem; }
+.labo-card { background: var(--bg-alt); border: 1px dashed var(--border); border-radius: var(--radius); padding: 1.4rem; display: flex; flex-direction: column; gap: 0.8rem; }
+.labo-head { display: flex; justify-content: space-between; align-items: center; gap: 0.6rem; }
+.labo-head h3 { font-size: 1.05rem; }
+.labo-head .project-state { font-family: var(--mono); font-size: 0.72rem; white-space: nowrap; }
+.labo-card p { color: var(--text-muted); font-size: 0.93rem; flex: 1; }
+.knowhow-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.2rem; }
+.knowhow { border-top: 1px solid var(--border); padding-top: 1rem; }
+.knowhow h3 { font-size: 0.85rem; font-weight: 600; margin-bottom: 0.8rem; }

@@ -290,3 +290,6 @@ img { max-width: 100%; display: block; }
   * { animation: none !important; transition: none !important; scroll-behavior: auto !important; }
   .reveal { opacity: 1; transform: none; }
 }
+
+/* Ligne d'avancement dans les cartes projet */
+.project .project-progress { flex: 0; font-size: 0.88rem; padding: 0.6rem 0.8rem; border-left: 2px solid var(--accent); background: var(--accent-soft); border-radius: 0 6px 6px 0; }
